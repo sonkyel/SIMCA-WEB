@@ -61,19 +61,19 @@ export default function AboutSection() {
         </div>
 
         {/* Stats */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mb-20'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-20'>
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className='text-center p-6 bg-slate-50 rounded-2xl border border-slate-100'
+              className='text-center p-4 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100'
             >
               <p
-                className='text-3xl font-bold text-orange-500 mb-1'
+                className='text-2xl sm:text-3xl font-bold text-orange-500 mb-1'
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
                 {stat.value}
               </p>
-              <p className='text-slate-600 text-sm font-medium'>{stat.label}</p>
+              <p className='text-slate-600 text-xs sm:text-sm font-medium'>{stat.label}</p>
             </div>
           ))}
         </div>
@@ -89,9 +89,9 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className='p-8 rounded-2xl border border-slate-100 bg-white hover:border-orange-200 hover:shadow-md transition-all duration-200 group'
+                className='p-5 sm:p-8 rounded-2xl border border-slate-100 bg-white hover:border-orange-200 hover:shadow-md transition-all duration-200 group text-center sm:text-left'
               >
-                <div className='w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-100 transition-colors duration-200'>
+                <div className='w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-100 transition-colors duration-200 mx-auto sm:mx-0'>
                   <Icon className='w-7 h-7 text-orange-500' />
                 </div>
                 <h3
@@ -107,8 +107,8 @@ export default function AboutSection() {
         </div>
 
         {/* Team */}
-        <div className='mt-20 bg-slate-800 rounded-3xl p-10 md:p-14 text-white'>
-          <div className='flex items-center gap-3 mb-8'>
+        <div className='mt-20 bg-slate-800 rounded-3xl p-8 sm:p-10 md:p-14 text-white'>
+          <div className='flex items-center gap-3 mb-8 justify-center sm:justify-start'>
             <Award className='w-8 h-8 text-orange-400' />
             <h3
               className='text-2xl font-bold'
@@ -118,7 +118,7 @@ export default function AboutSection() {
             </h3>
           </div>
           <div className='grid md:grid-cols-2 gap-8'>
-            <div className='bg-white/10 rounded-2xl p-6'>
+            <div className='bg-white/10 rounded-2xl p-4 sm:p-6 text-center sm:text-left'>
               <p className='text-orange-300 text-xs font-semibold uppercase tracking-wider mb-2'>
                 Director General
               </p>
@@ -128,7 +128,7 @@ export default function AboutSection() {
               <p className='text-slate-300 text-sm mb-3'>cesar.arzola@asing-industry.com</p>
               <p className='text-slate-300 text-sm'>WhatsApp: 442 748 3933</p>
             </div>
-            <div className='bg-white/10 rounded-2xl p-6'>
+            <div className='bg-white/10 rounded-2xl p-4 sm:p-6 text-center sm:text-left'>
               <p className='text-orange-300 text-xs font-semibold uppercase tracking-wider mb-2'>
                 Arquitectura
               </p>

@@ -98,22 +98,22 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: i * 0.08 }}
-                className='bg-white rounded-2xl border border-slate-100 p-7 hover:border-orange-200 hover:shadow-lg transition-all duration-200 group cursor-default'
+                className='bg-white rounded-2xl border border-slate-100 p-5 sm:p-7 hover:border-orange-200 hover:shadow-lg transition-all duration-200 group cursor-default text-center sm:text-left'
               >
                 <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors duration-200 ${category.color}`}
+                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors duration-200 mx-auto sm:mx-0 ${category.color}`}
                 >
                   <Icon className='w-6 h-6' />
                 </div>
 
                 <h3
-                  className='text-lg font-semibold text-slate-800 mb-4'
+                  className='text-base sm:text-lg font-semibold text-slate-800 mb-4'
                   style={{ fontFamily: 'Poppins, sans-serif' }}
                 >
                   {category.title}
                 </h3>
 
-                <ul className='space-y-2'>
+                <ul className='space-y-2 text-left'>
                   {category.services.map((service) => (
                     <li key={service} className='flex items-start gap-2 text-slate-600 text-sm'>
                       <ChevronRight className='w-4 h-4 text-orange-400 mt-0.5 flex-shrink-0' />
@@ -131,7 +131,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.45, delay: 0.4 }}
-            className='bg-orange-500 rounded-2xl p-7 flex flex-col justify-between'
+            className='bg-orange-500 rounded-2xl p-5 sm:p-7 flex flex-col justify-between text-center sm:text-left'
           >
             <div>
               <h3

@@ -69,7 +69,7 @@ export default function ContactSection() {
             {contacts.map((contact) => (
               <div
                 key={contact.name}
-                className='bg-white/5 border border-white/10 rounded-2xl p-6 mb-5'
+                className='bg-white/5 border border-white/10 rounded-2xl p-6 mb-5 text-center sm:text-left'
               >
                 <p className='text-orange-300 text-xs font-semibold uppercase tracking-wider mb-1'>
                   {contact.role}
@@ -96,7 +96,7 @@ export default function ContactSection() {
                     href={`https://wa.me/${contact.whatsapp}`}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl mt-3 transition-colors duration-200 cursor-pointer'
+                    className='flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl mt-3 transition-colors duration-200 cursor-pointer w-full sm:w-auto sm:inline-flex'
                   >
                     <MessageCircle className='w-4 h-4' />
                     Escribir por WhatsApp

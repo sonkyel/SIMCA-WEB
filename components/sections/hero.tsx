@@ -30,7 +30,7 @@ function HeroContent() {
       </div>
 
       <h2
-        className='text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight'
+        className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight'
         style={{ fontFamily: 'Poppins, sans-serif' }}
       >
         Calidad, precisión y experiencia en cada proyecto
@@ -45,14 +45,14 @@ function HeroContent() {
       <div className='flex flex-col sm:flex-row gap-4 justify-center'>
         <a
           href='#servicios'
-          className='inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 cursor-pointer text-base'
+          className='inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-xl transition-colors duration-200 cursor-pointer text-base'
         >
           Ver Servicios
           <ChevronDown className='w-4 h-4' />
         </a>
         <a
           href='#contacto'
-          className='inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-slate-800 border border-gray-200 font-semibold px-8 py-4 rounded-xl transition-colors duration-200 cursor-pointer text-base'
+          className='inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-slate-800 border border-gray-200 font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-xl transition-colors duration-200 cursor-pointer text-base'
         >
           Solicitar Cotización
         </a>

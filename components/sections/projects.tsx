@@ -159,7 +159,7 @@ function Lightbox({ project, all, onClose }: LightboxProps) {
         {/* Close */}
         <button
           onClick={onClose}
-          className='absolute -top-12 right-0 text-white/80 hover:text-white cursor-pointer transition-colors duration-200'
+          className='absolute -top-10 sm:-top-12 right-0 text-white/80 hover:text-white cursor-pointer transition-colors duration-200'
           aria-label='Cerrar'
         >
           <X className='w-8 h-8' />
@@ -248,12 +248,12 @@ export default function ProjectsSection() {
         </div>
 
         {/* Filter tabs — no "Todos" */}
-        <div className='flex flex-wrap justify-center gap-3 mb-12'>
+        <div className='flex overflow-x-auto pb-2 gap-3 mb-12 sm:flex-wrap sm:justify-center sm:overflow-visible sm:pb-0'>
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 cursor-pointer ${
+              className={`whitespace-nowrap flex-shrink-0 px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 cursor-pointer ${
                 activeFilter === cat
                   ? 'bg-orange-500 text-white shadow-md'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'

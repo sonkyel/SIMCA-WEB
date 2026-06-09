@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='flex flex-wrap justify-center gap-6 text-sm'>
+          <div className='flex flex-wrap justify-center gap-4 sm:gap-6 text-sm'>
             {['Nosotros', 'Servicios', 'Proyectos', 'Contacto'].map((link) => (
               <a
                 key={link}
